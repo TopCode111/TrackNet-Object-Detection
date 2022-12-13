@@ -7,7 +7,7 @@ PS: It's **not** an official implementation !
 
 ## Modification
 ### 1. Combine **ResNet** and **U-Net** to form network architecture.   
-![image](https://github.com/TopCode111/TrackNet-Object-Detection/blob/main/pics/model_structure.jpg)    
+![image](https://github.com/TopCode111/TrackNet-Object-Detection/blob/master/pics/model_structure.jpg)    
 
 |Layer|Filter size|Depth|Padding|Stride|Activation|   
 |-----|-----------|-----|-------|------|----------|   
@@ -62,7 +62,7 @@ Sturcture of res-block-upsamping(resU)
 
 ### 2. Use Conv2Dtranspose instead for upsampling in decoder, matching structure of ResNet in encoder.
 ### 3. Use focal loss to help model focusing more on small ground truth.    
-![image](https://github.com/TopCode111/TrackNet-Object-Detection/blob/main/pics/focal_loss.jpg)
+![image](https://github.com/TopCode111/TrackNet-Object-Detection/blob/master/pics/focal_loss.jpg)
 ### 4. Use consecutive 3 frames in gray scale as input image to reduce memory usage and increase training speed.
 ## Parameter of training
 |Parameter|Value|   
@@ -94,7 +94,7 @@ TP, FP1, FP2, TN, FN are defined as below:
 2. Run `pip3 install -r requirements.txt` to install packages required.  
 3. Because the model is created with `channel first`, it could be trained and tested with GPU only.
 ## Label
-![image](https://github.com/TopCode111/TrackNet-Object-Detection/blob/main/pics/image_label.jpg)    
+![image](https://github.com/TopCode111/TrackNet-Object-Detection/blob/master/pics/image_label.jpg)    
 1. Run `python imgLabel.py` to open the program.
 2. Mouse and button events are described below:   
 
