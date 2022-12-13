@@ -1,6 +1,6 @@
 # TrackNet-Object-Detection
 PS: It's **not** an official implementation !
-![image](https://github.com/TopCode111/TrackNet-Object-Detection.git)
+![image](https://github.com/TopCode111/TrackNet-Object-Detection/blob/master/pics/2_15_08_predict.gif)
 
 ## TrackNet
 **TrackNet** is a deep learning network for higi-speed and tiny objects tracking invented by National Chiao-Tung University in Taiwan. It's a FCN model adpotes **VGG16** to generate feature map and **DeconvNet** to decode using pixel-wise classification. TrackNet could take multiple consecutive frames as input, model will learn not only object tracking but also trajectory to enhance its capability of positioning and recognition. TrackNet will generate gaussian heat map centered on ball to indicate position of the ball. Binary cross-entropy is used as loss function to compute difference between heat map of prediction and ground truth.
